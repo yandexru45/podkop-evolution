@@ -2,15 +2,24 @@
 
 > **Проект переехал и переименован в [NetShift](https://github.com/yandexru45/netshift).**
 
-Этот репозиторий сохранён только для совместимости: старые установки
-проверяют обновления и скачивают пакеты по этому адресу. Здесь публикуются
-релизы NetShift, чтобы у уже установленных роутеров корректно работала
-проверка обновлений.
+Этот репозиторий — **разовый мостик совместимости**. Уже установленные роутеры
+проверяют обновления по старому адресу `podkop-evolution`, поэтому здесь
+остаётся рабочий `install.sh`. Сам скрипт уже ставит **NetShift** и скачивает
+пакеты из нового репозитория [`netshift`](https://github.com/yandexru45/netshift).
 
 ## Установка / обновление
+
+Рекомендуемый адрес (новый репозиторий):
+
+```sh
+sh <(wget -O - https://raw.githubusercontent.com/yandexru45/netshift/refs/heads/main/install.sh)
+```
+
+Старый адрес (продолжает работать для уже установленных систем):
 
 ```sh
 sh <(wget -O - https://raw.githubusercontent.com/yandexru45/podkop-evolution/refs/heads/main/install.sh)
 ```
 
-Актуальная разработка ведётся в **<https://github.com/yandexru45/netshift>**.
+Оба варианта ставят одно и то же — **NetShift**. Актуальная разработка и релизы:
+**<https://github.com/yandexru45/netshift>**.
